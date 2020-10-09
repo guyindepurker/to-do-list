@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&amp;family=Quicksand:wght@300;500&amp;family=Rubik:ital,wght@0,300;0,400;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="onInit()">
+    <div class="main-site">
+
+    
+    <section class="container-fluid text-center bg-dark py-2">
+        <h1 class="display-2 text-center text-success font-weight-bolder ">Lists</h1>
+        <p class="lead text-light">Great app that help you be more pro-active in your day!</p>
+    </section>
+
+    <section class="container-fluid text-center bg-light text-info py-3" >
+        <h2 class="display-4 font-weight-bolder my-4">Filter</h2>
+        <select onchange="onSetFilter(this.value)">
+            <option value="ALL">All</option>
+            <option value="ACTIVE">Active</option>
+            <option value="DONE">Done</option>
+        </select>
+        <select class="sort" onchange="onSetBysort(this.value)">
+            <option value="TEXT">Text</option>
+            <option value="IMPORTENT">Importent</option>
+            <option value="CREATED">Created</option>
+        </select>
+    </section>
+<section class="container-fluid text-center">
+    <ul class="todo-list">
+    </ul>
+
+</section>
+    <section class="container-fluid text-center my-4 add-continer">
+        
+        <input class="new-todo-txt" type="text" placeholder="What todo?" />
+        <select class="importent">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+        
+        <button class="btn btn-primary" type="button" onclick="onAddTodo()">Add</button>
+    </section>
+        <section class="continer-fluid bg-primary todo-stat">
+            Total todos:
+            <span class="total"></span>
+            Active:
+            <span class="active"></span> 
+        </section>
+        
+<footer class="container-fluid bg-dark text-center text-light">
+    
+   Guy Indepurker &copy; 2020
+</footer>
+</div>
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/services/util-service.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/todo-service.js"></script>
+    <script src="js/todo-controller.js"></script>
+</body>
+</html>

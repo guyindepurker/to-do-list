@@ -1,0 +1,90 @@
+body {
+    /* background-color: lightblue; */
+    font-size: 2em;
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+.main-site{
+    display: flex;
+    flex-direction: column;
+}
+.filter-container {
+    background-color: lightskyblue;
+    padding: 10px;
+}
+
+.filter-container select {
+    font-size: 1.1em;
+}
+
+.new-todo-txt {
+    padding: 5px 10px;
+    font-size: 30px;
+}
+
+.new-todo-txt:focus {
+    background-color: lightsteelblue;
+    transition: .5s;
+}
+
+.btn {
+    font-size: 1.1em;
+    border:0;
+    padding: 5px 15px ;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .5s;
+
+}
+
+
+.done {
+    text-decoration: line-through;
+    color: rgb(174, 85, 85);
+}
+
+.todo-stat {
+    background-color: lightgray;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.todo-stat span {
+    color: rgb(254, 254, 254);
+    font-weight: bold;
+}
+input {
+    border-radius: 5px;
+    border: 1px solid lightskyblue;
+    padding: 20px;
+}
+footer {
+    /* background-color: darkblue; */
+    color: white;
+    padding: 20px;
+    margin-top: 80px;
+}
+ select{
+    /* font-size: 3rem; */
+    padding: 10px;
+    border-radius: 10px;
+    color:rgb(122, 189, 196);
+}
+@media screen and (max-width:450px){
+    .add-continer select {
+        margin:10px;
+    }
+}
+ul{
+    list-style: none;
+}
+li{
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.303); */
+    font-weight: bolder;
+    font-family: 'Rubik', sans-serif;
+
+}
