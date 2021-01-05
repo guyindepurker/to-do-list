@@ -7,7 +7,7 @@ the app is part of my studies on the bootcamp of coding academy.
 You can see the app at the following link:
 [GitHub Pages](https://guyindepurker.github.io/to-do-list/)
 
-Or copy this link
+Or copy this link:
 
 `https://guyindepurker.github.io/to-do-list/`
 
